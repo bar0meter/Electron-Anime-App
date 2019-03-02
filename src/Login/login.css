@@ -3,12 +3,14 @@
   margin: 10vh auto;
 }
 
-#signInForm > h1 {
+#signInForm > h1,
+#signUpForm > h1 {
   text-align: center;
   text-decoration: underline;
 }
 
-.loginLabel {
+.loginLabel,
+.registerLabel {
   line-height: 1.5rem;
   text-align: center;
   color: rgb(100, 100, 100);
@@ -21,13 +23,25 @@
   margin-top: 50px;
 }
 
+#signUpForm {
+  width: 300px;
+  margin: -10px auto;
+}
+
+#signUpForm > form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 50px;
+}
+
 .formInput {
   padding: 10px 12px;
   font-size: 16px;
   border-width: 0 0 1px 0;
   border-color: rgb(192, 192, 192);
   outline: none;
-  margin: 20px 0;
+  margin: 15px 0;
   font-family: "Open Sans";
   letter-spacing: 0.1rem;
 }
