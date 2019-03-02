@@ -1,0 +1,69 @@
+#signInForm {
+  width: 300px;
+  margin: 10vh auto;
+}
+
+#signInForm > h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.loginLabel {
+  line-height: 1.5rem;
+  text-align: center;
+  color: rgb(100, 100, 100);
+}
+
+#signInForm > form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.formInput {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-width: 0 0 1px 0;
+  border-color: rgb(192, 192, 192);
+  outline: none;
+  margin: 20px 0;
+  font-family: "Open Sans";
+  letter-spacing: 0.1rem;
+}
+
+.formInput::placeholder {
+  font-family: "Open Sans";
+  color: rgb(202, 200, 200);
+}
+
+.formInput:focus {
+  border-color: black;
+}
+
+.forgotPassword {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.forgotPassword a {
+  color: gray;
+}
+
+.forgotPassword a:hover,
+.forgotPassword a:active {
+  color: red;
+}
+
+.formButton {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
