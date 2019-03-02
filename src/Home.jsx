@@ -9,7 +9,7 @@ import React, {
 import axios from "axios";
 import SearchBar from "./SearchBar";
 import DisplayMain from "./DisplayMain";
-import Button from "./Button";
+import PaginateButton from "./PaginateButton";
 
 import "./index.css";
 
@@ -92,7 +92,7 @@ const Home = () => {
     let allButtons = [];
     for (let page = 1; page <= totalPages; page++) {
       allButtons.push(
-        <Button
+        <PaginateButton
           value={page}
           onBtnClick={handleBtnClick}
           action={{ type: "goto_page", payload: page }}
@@ -116,13 +116,13 @@ const Home = () => {
       />
       {result.length !== 0 && (
         <div className="pagination">
-          <Button
+          <PaginateButton
             value="<<"
             onBtnClick={handleBtnClick}
             action={{ type: "first_page" }}
             isDisabled={currentPage === 1}
           />
-          <Button
+          <PaginateButton
             value="<"
             onBtnClick={handleBtnClick}
             action={{ type: "prev_page" }}
@@ -130,13 +130,13 @@ const Home = () => {
           />
 
           {getPages()}
-          <Button
+          <PaginateButton
             value=">"
             onBtnClick={handleBtnClick}
             action={{ type: "next_page" }}
             isDisabled={currentPage === totalPages}
           />
-          <Button
+          <PaginateButton
             value=">>"
             onBtnClick={handleBtnClick}
             action={{ type: "last_page" }}

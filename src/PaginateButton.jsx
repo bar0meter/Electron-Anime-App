@@ -17,7 +17,7 @@ const CustomButton = styled.button`
   }
 `;
 
-const Button = ({ value, onBtnClick, action, isDisabled }) => {
+const PaginateButton = ({ value, onBtnClick, action, isDisabled }) => {
   return (
     <CustomButton onClick={() => onBtnClick(action)} disabled={isDisabled}>
       {value}
@@ -25,4 +25,4 @@ const Button = ({ value, onBtnClick, action, isDisabled }) => {
   );
 };
 
-export default Button;
+export default PaginateButton;
