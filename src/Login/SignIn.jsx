@@ -38,6 +38,9 @@ const SignIn = () => {
           placeholder="Password"
         />
         <button className="formButton">Login</button>
+        <div className="footerLink">
+          Don't have an account ? <a href="#">Register here</a>
+        </div>
       </form>
     </div>
   );

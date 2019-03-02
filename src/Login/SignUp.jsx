@@ -41,6 +41,9 @@ const SignUp = () => {
           placeholder="Confirm Password"
         />
         <button className="formButton">Register</button>
+        <div className="footerLink">
+          Already have an account ? <a href="">Login here</a>
+        </div>
       </form>
     </div>
   );

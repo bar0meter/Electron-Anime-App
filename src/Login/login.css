@@ -81,3 +81,13 @@
   margin-top: 30px;
   text-transform: uppercase;
 }
+
+.footerLink {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footerLink > a {
+  color: red;
+}
