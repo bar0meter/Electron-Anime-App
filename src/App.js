@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import Home from "./Home";
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        <h1>Electron Desktop Starter Template</h1>
-      </div>
-    )
+    return <Home />;
   }
 }
 
-export default App
+export default App;
