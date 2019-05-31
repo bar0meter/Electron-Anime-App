@@ -2,7 +2,7 @@
   "main": "src/electron-starter.js",
   "devDependencies": {
     "electron": "^2.0.1",
-    "foreman": "^2.0.0",
+    "foreman": "^3.0.1",
     "react-scripts": "^1.0.14"
   },
   "dependencies": {
